@@ -1,0 +1,180 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(120deg, #f6d365, #fda085); /* Soft peach and orange gradient */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.hidden {
+    display: none;
+}
+
+section {
+    text-align: center;
+    padding: 25px;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.start-section {
+    margin-top: 20vh;
+}
+
+.game-section {
+    margin-top: 10vh;
+    position: relative;
+}
+
+.cell {
+    font-family: "Permanent Marker", cursive;
+    width: 100px;
+    height: 100px;
+    border: 2px solid #80deea; /* Pastel blue border */
+    cursor: pointer;
+    line-height: 100px;
+    font-size: 60px;
+    text-align: center;
+    color: #004d40; /* Deep teal */
+    background-color: #b2ebf2; /* Light teal */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+    .cell:hover {
+        background-color: #80deea; /* Brighter pastel blue */
+        transform: scale(1.05); /* Slight zoom effect */
+    }
+
+.winning-line {
+    position: absolute;
+    height: 4px;
+    background: linear-gradient(90deg, #42a5f5, #7e57c2); /* Blue to Purple gradient */
+    border-radius: 2px;
+    transform-origin: left center;
+    z-index: 10;
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+.game--title {
+    font-size: 50px;
+    color: #37474f; /* Muted dark slate */
+    margin: 20px auto;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.game--container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    width: 100%;
+    max-width: 320px;
+    margin: 20px auto;
+    position: relative;
+}
+
+.game--status {
+    font-size: 22px;
+    color: #ff8a65; /* Soft coral */
+    margin: 15px auto;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+button {
+    width: 160px;
+    border-radius: 25px;
+    height: 45px;
+    font-size: 18px;
+    background: linear-gradient(90deg, #64b5f6, #81c784); /* Calming blue and green */
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+    button:hover {
+        background: linear-gradient(90deg, #42a5f5, #66bb6a); /* Slightly brighter gradient */
+        transform: scale(1.1);
+    }
+
+/* Footer styles from earlier CSS */
+.creator-footer {
+    margin-top: auto;
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+    background: #ffffff;
+    font-size: 16px;
+    color: #37474f; /* Muted dark slate */
+    border-top: 2px solid #81c784; /* Pastel green border */
+}
+
+.creator-name {
+    font-weight: bold;
+    color: #00897b; /* Calming teal */
+    text-decoration: none;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+    .creator-name:hover {
+        color: #4db6ac; /* Brighter teal */
+        text-shadow: 0 0 5px rgba(77, 182, 172, 0.6);
+    }
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .cell {
+        width: 80px;
+        height: 80px;
+        line-height: 80px;
+        font-size: 50px;
+    }
+
+    .game--title {
+        font-size: 40px;
+    }
+
+    .game--status {
+        font-size: 18px;
+    }
+
+    button {
+        width: 130px;
+        height: 40px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cell {
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        font-size: 40px;
+    }
+
+    .game--title {
+        font-size: 30px;
+    }
+
+    .game--status {
+        font-size: 16px;
+    }
+
+    button {
+        width: 110px;
+        height: 35px;
+        font-size: 14px;
+    }
+
+    .creator-footer {
+        font-size: 14px;
+    }
+}
