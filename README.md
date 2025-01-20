@@ -1,35 +1,82 @@
 Tic-Tac-Toe Game
 
-This is a simple Tic-Tac-Toe game implemented using HTML, CSS, and JavaScript.
+Description
 
-Features:
+This project is a web-based implementation of the classic Tic-Tac-Toe game. Players take turns marking spaces in a 3x3 grid, aiming to achieve three in a row either horizontally, vertically, or diagonally. The game is visually appealing with a responsive UI and is built using HTML, CSS, and JavaScript.
 
-Two-player gameplay with X and O markers.
-Visual game board with cells.
-Winning logic to determine the winner or a draw.
-Winning line animation displayed upon a win.
-Restart button to reset the game.
-How to Play:
+Features
 
-Open the index.html file in a web browser.
-Click the "Start Game" button.
-Take turns clicking on empty cells to place your mark (X or O).
-The game will automatically determine the winner or a draw.
-Click the "Restart Game" button to play again.
-Project Structure:
+Start Game: Initiate the game from the start screen.
 
-index.html: The main HTML file containing the game's structure.
-style.css: The CSS file that styles the game's visual elements.
-script.js: The JavaScript file that implements the game logic and interactivity.
-Dependencies:
+Interactive Gameplay: Clickable cells to place X or O.
 
-No external libraries are required.
-Author:
+Real-Time Status Updates: Displays the current player's turn.
 
-Adi Hafeez (https://in.linkedin.com/in/adihafeez)
+Winning Logic: Detects when a player wins or if the game ends in a draw.
 
-License:
+Winning Line Animation: Highlights the winning sequence with an animated line.
 
-This project is for educational purposes only. You can modify and use the code as needed, but please credit the original author.
+Restart Game: Reset the game to play again.
 
-I hope this README file provides a clear and informative overview of your Tic-Tac-Toe game!
+Responsive Design: Optimized for various screen sizes, from desktops to mobile devices.
+
+Technologies Used
+
+HTML: Structure of the web page.
+
+CSS: Styling and layout, including responsive design.
+
+JavaScript: Game logic, event handling, and DOM manipulation.
+
+How to Run
+
+Clone or download the repository.
+
+Open the index.html file in your web browser.
+
+Click the "Start Game" button to begin.
+
+Play the game by clicking on cells to mark them as X or O.
+
+Observe game results (win, draw) and restart the game if desired.
+
+File Structure
+
+Tic-Tac-Toe/
+|-- index.html       # Main HTML file for the game
+|-- style.css        # Stylesheet for the game UI
+|-- script.js        # JavaScript file for game logic
+
+Game Rules
+
+The game is played on a 3x3 grid.
+
+Two players alternate turns: Player X and Player O.
+
+The objective is to get three of your marks (X or O) in a row (horizontally, vertically, or diagonally).
+
+The game ends in a draw if all cells are filled without a winner.
+
+Players can restart the game anytime using the "Restart Game" button.
+
+Responsive Design
+
+Desktop: The grid and buttons are optimized for larger screens with ample spacing.
+
+Tablet and Mobile: The grid adjusts to smaller sizes while maintaining usability and aesthetics.
+
+Credits
+
+Created by Adi Hafeez.
+
+Future Enhancements
+
+Add multiplayer online support.
+
+Include a score tracker for multiple rounds.
+
+Add AI for single-player mode.
+
+License
+
+This project is open-source and available under the MIT License.
