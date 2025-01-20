@@ -1,82 +1,58 @@
-Tic-Tac-Toe Game
+# Tic-Tac-Toe Game
 
-Description
+A simple and visually appealing Tic-Tac-Toe game implemented using HTML, CSS, and JavaScript.
 
-This project is a web-based implementation of the classic Tic-Tac-Toe game. Players take turns marking spaces in a 3x3 grid, aiming to achieve three in a row either horizontally, vertically, or diagonally. The game is visually appealing with a responsive UI and is built using HTML, CSS, and JavaScript.
+## Table of Contents
+- [Overview](#overview)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Setup Instructions](#setup-instructions)
+- [How to Play](#how-to-play)
+- [File Structure](#file-structure)
+- [Future Improvements](#future-improvements)
+- [Credits](#credits)
 
-Features
+## Overview
+This is a web-based implementation of the classic Tic-Tac-Toe game. The game has a responsive design, an interactive interface, and smooth transitions to enhance the user experience.
 
-Start Game: Initiate the game from the start screen.
+## Features
+- **Start Game Section**: Allows players to begin the game.
+- **Dynamic Gameplay**: Automatically switches turns between "X" and "O."
+- **Winning Line Animation**: Highlights the winning condition with a gradient line.
+- **Restart Option**: Reset the game at any time.
+- **Responsive Design**: Works seamlessly across different devices and screen sizes.
 
-Interactive Gameplay: Clickable cells to place X or O.
+## Technologies Used
+- **HTML5**: Structure of the application.
+- **CSS3**: Styling and responsive design.
+- **JavaScript**: Game logic and interactivity.
 
-Real-Time Status Updates: Displays the current player's turn.
+## Setup Instructions
+1. Clone or download the repository.
+2. Open the `index.html` file in any modern web browser.
+3. Enjoy the game!
 
-Winning Logic: Detects when a player wins or if the game ends in a draw.
+## How to Play
+1. Click the "Start Game" button to begin.
+2. Players take turns clicking on cells to place their mark ("X" or "O").
+3. The first player to align three marks in a row (horizontally, vertically, or diagonally) wins.
+4. If all cells are filled without a winner, the game ends in a draw.
+5. Use the "Restart Game" button to play again.
 
-Winning Line Animation: Highlights the winning sequence with an animated line.
-
-Restart Game: Reset the game to play again.
-
-Responsive Design: Optimized for various screen sizes, from desktops to mobile devices.
-
-Technologies Used
-
-HTML: Structure of the web page.
-
-CSS: Styling and layout, including responsive design.
-
-JavaScript: Game logic, event handling, and DOM manipulation.
-
-How to Run
-
-Clone or download the repository.
-
-Open the index.html file in your web browser.
-
-Click the "Start Game" button to begin.
-
-Play the game by clicking on cells to mark them as X or O.
-
-Observe game results (win, draw) and restart the game if desired.
-
-File Structure
-
+## File Structure
+```
 Tic-Tac-Toe/
-|-- index.html       # Main HTML file for the game
-|-- style.css        # Stylesheet for the game UI
-|-- script.js        # JavaScript file for game logic
+├── index.html      # Main HTML file
+├── style.css       # Stylesheet
+├── script.js       # JavaScript logic
+└── README.md       # Documentation
+```
 
-Game Rules
+## Future Improvements
+- Add a two-player mode over the internet.
+- Include an AI opponent with varying difficulty levels.
+- Enhance animations and sound effects.
+- Save game state and scores locally.
 
-The game is played on a 3x3 grid.
-
-Two players alternate turns: Player X and Player O.
-
-The objective is to get three of your marks (X or O) in a row (horizontally, vertically, or diagonally).
-
-The game ends in a draw if all cells are filled without a winner.
-
-Players can restart the game anytime using the "Restart Game" button.
-
-Responsive Design
-
-Desktop: The grid and buttons are optimized for larger screens with ample spacing.
-
-Tablet and Mobile: The grid adjusts to smaller sizes while maintaining usability and aesthetics.
-
-Credits
-
-Created by Adi Hafeez.
-
-Future Enhancements
-
-Add multiplayer online support.
-
-Include a score tracker for multiple rounds.
-
-Add AI for single-player mode.
-
-License
-
-This project is open-source and available under the MIT License.
+## Credits
+Created by [Adi Hafeez](https://in.linkedin.com/in/adihafeez).
